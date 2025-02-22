@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Social Media</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a202c; /* Dark blue background */
+            color: #ffffff; /* White text */
+        }
+        .navbar {
+            background-color: #2d3748; /* Slightly lighter dark blue navbar */
+        }
+        .navbar-brand, .nav-link {
+            color: #cbd5e0 !important; /* Light gray for navbar text */
+        }
+        .card {
+            background-color: #2d3748; /* Card background dark blue */
+            border-color: #4a5568; /* Slightly lighter border */
+            color: #ffffff;
+        }
+        .form-control {
+            background-color: #4a5568; /* Input background dark blue */
+            border-color: #6b7280; /* Input border */
+            color: #ffffff;
+        }
+        .btn-primary {
+            background-color: #667eea; /* A blue button color */
+            border-color: #667eea;
+        }
+        .btn-primary:hover {
+            background-color: #5a67d8; /* Darker blue on hover */
+            border-color: #5a67d8;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Social Media</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Friends</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Create a Post</h5>
+                        <form>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="postContent" rows="3" placeholder="What's on your mind?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Post</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Posts</h5>
+                        <div class="list-group">
+                            <div class="list-group-item card mb-3">
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-2 text-muted">@user1 - 5 minutes ago</h6>
+                                    <p class="card-text">This is the first post on our simple social media website. Using Bootstrap for styling and a dark blue theme!</p>
+                                </div>
+                            </div>
+                            <div class="list-group-item card mb-3">
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-2 text-muted">@user2 - 1 hour ago</h6>
+                                    <p class="card-text">Another post example.  Dark blue theme is looking good, right?</p>
+                                </div>
+                            </div>
+                            <div class="list-group-item card mb-3">
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-2 text-muted">@user3 - 2 hours ago</h6>
+                                    <p class="card-text">Just testing out the social media website.  Let me know what you think!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
